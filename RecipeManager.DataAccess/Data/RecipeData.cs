@@ -3,7 +3,7 @@ using RecipeManager.DataAccess.Models;
 
 namespace RecipeManager.DataAccess.Data;
 
-public class RecipeData
+public class RecipeData : IRecipeData
 {
     private readonly ISqlDataAccess _db;
 
