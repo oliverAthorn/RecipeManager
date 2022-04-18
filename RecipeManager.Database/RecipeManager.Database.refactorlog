@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="53b0f38b-734d-491b-bc90-c19a99de3565" ChangeDateTime="04/15/2022 15:01:18">
+    <Property Name="ElementName" Value="[dbo].[RecipeIngredient].[Quantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RecipeIngredient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuantityId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4c43d02-2515-41e7-bed1-35f27fa8a110" ChangeDateTime="04/15/2022 15:01:24">
+    <Property Name="ElementName" Value="[dbo].[RecipeIngredient].[MeasurementUnit]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RecipeIngredient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MeasurementUnitId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1a9f8517-4f2d-4ab3-b592-a6b2abce4ea3" ChangeDateTime="04/15/2022 15:05:35">
+    <Property Name="ElementName" Value="[dbo].[Recipe].[RecipeName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Recipe]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71e0e3d3-fb0a-411b-b244-d1b79199ddf2" ChangeDateTime="04/15/2022 15:05:41">
+    <Property Name="ElementName" Value="[dbo].[Recipe].[RecipeDescription]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Recipe]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="177ac1be-087b-415f-b805-a48ff42fc022" ChangeDateTime="04/15/2022 15:06:06">
+    <Property Name="ElementName" Value="[dbo].[Ingredient].[IngredientName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Ingredient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2253c188-193d-4f6c-8a9e-7f42ac934d08" ChangeDateTime="04/15/2022 15:06:34">
+    <Property Name="ElementName" Value="[dbo].[Quantity].[QuantityAmount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Quantity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Amount" />
+  </Operation>
+</Operations>

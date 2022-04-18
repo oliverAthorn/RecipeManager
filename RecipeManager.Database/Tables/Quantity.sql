@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Quantity]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Amount] INT NOT NULL
+)
