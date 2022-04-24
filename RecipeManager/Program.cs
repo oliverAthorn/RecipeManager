@@ -1,4 +1,5 @@
 using RecipeManager.DataAccess.DbAccess;
+using RecipeManager.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IRecipeData, RecipeData>();
+builder.Services.AddSingleton<IRecipeService, RecipeService>();
 
 var app = builder.Build();
 

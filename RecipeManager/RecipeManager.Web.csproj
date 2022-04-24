@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RecipeManager.DataAccess\RecipeManager.DataAccess.csproj" />
     <ProjectReference Include="..\RecipeManager.Database\RecipeManager.Database.sqlproj" />
+    <ProjectReference Include="..\RecipeManager.Services\RecipeManager.Services.csproj" />
   </ItemGroup>
 
 </Project>
