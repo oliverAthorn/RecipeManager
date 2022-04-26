@@ -2,7 +2,7 @@
 
 namespace RecipeManager.DataAccess.Data;
 
-public interface IRecipeData
+public interface IRecipeRepository
 {
     Task DeleteRecipe(int id);
     Task<IEnumerable<RecipeModel>> GetAllRecipes();

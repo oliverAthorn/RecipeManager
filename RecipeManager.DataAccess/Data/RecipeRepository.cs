@@ -3,17 +3,17 @@ using RecipeManager.DataAccess.Models;
 
 namespace RecipeManager.DataAccess.Data;
 
-public class RecipeData : IRecipeData
+public class RecipeRepository : IRecipeRepository
 {
     private readonly ISqlDataAccess _db;
 
-    public RecipeData(ISqlDataAccess db)
+    public RecipeRepository(ISqlDataAccess db)
     {
         _db = db;
     }
 
-    public Task<IEnumerable<RecipeModel>> GetAllRecipes() =>
-        _db.LoadData<RecipeModel, dynamic>("dbo.spRecipe_GetAll", new { });
+    public async Task<IEnumerable<RecipeModel>> GetAllRecipes() =>
+        await _db.LoadData<RecipeModel, dynamic>("dbo.spRecipe_GetAll", new { });
 
     public async Task<RecipeModel?> GetRecipe(int id)
     {

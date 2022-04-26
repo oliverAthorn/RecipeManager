@@ -6,33 +6,33 @@ namespace RecipeManager.Services.Concrete;
 
 public class RecipeService : IRecipeService
 {
-    private readonly IRecipeData _recipeData;
+    private readonly IRecipeRepository _recipeData;
 
-    public RecipeService(IRecipeData recipeData)
+    public RecipeService(IRecipeRepository recipeData)
     {
         _recipeData = recipeData;
     }
-    Task IRecipeService.DeleteRecipe(int id)
+    public Task DeleteRecipe(int id)
     {
         throw new NotImplementedException();
     }
 
-    Task<IEnumerable<RecipeModel>> IRecipeService.GetAllRecipes()
+    public async Task<IEnumerable<RecipeModel>> GetAllRecipes()
+    {
+        return await _recipeData.GetAllRecipes();
+    }
+
+    public Task<RecipeModel?> GetRecipe(int id)
     {
         throw new NotImplementedException();
     }
 
-    Task<RecipeModel?> IRecipeService.GetRecipe(int id)
+    public Task InsertRecipe(RecipeModel recipe)
     {
-        throw new NotImplementedException();
+        return _recipeData.InsertRecipe(recipe);
     }
 
-    Task IRecipeService.InsertRecipe(RecipeModel recipe)
-    {
-        throw new NotImplementedException();
-    }
-
-    Task IRecipeService.UpdateRecipe(RecipeModel recipe)
+    public Task UpdateRecipe(RecipeModel recipe)
     {
         throw new NotImplementedException();
     }

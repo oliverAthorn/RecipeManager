@@ -2,8 +2,8 @@
 
 public class RecipeViewModel
 {
-    public IEnumerable<RecipeModel>? Recipes { get; set; }
-    public RecipeModel? Recipe { get; set; }
+    public IEnumerable<RecipeModel> Recipes { get; set; } = new List<RecipeModel>();
+    public RecipeModel Recipe { get; set; }
   
 }
 

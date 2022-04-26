@@ -4,18 +4,30 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*<p>
-    Recipes:
+<p>Recipes:
+    <ul>
     @{
-    foreach(var item in )
+    foreach(var item in Model.Recipes)
     {
-        @item.Name
-        @item.Description
+       <li>@item.Name -
+       @item.Description</li> 
     }
-}
-</p>  *@ 
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+}</ul></p>
+
+@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Enter Name: </td>
+            <td><input type="text" name="Recipe.Name" /></td>
+        </tr>
+        <tr>
+            <td>Enter Description: </td>
+            <td><input type="text" name="Recipe.Description" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form"/></td>
+        </tr>
+    </table>
+}
